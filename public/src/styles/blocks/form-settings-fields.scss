@@ -1,0 +1,39 @@
+.form-settings-field {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+
+  &__setting {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 36px;
+    border-radius: 5px;
+    background-color: var(--s-primary-color-10);
+    color: var(--s-black-color-80);
+    cursor: pointer;
+
+    & > i {
+      position: absolute;
+      left: 10px;
+    }
+  }
+
+  &__other {
+    flex-grow: 1;
+    margin-right: 8px;
+  }
+
+  &__remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 5px;
+    background-color: var(--s-error-color-light);
+    cursor: pointer;
+  }
+}

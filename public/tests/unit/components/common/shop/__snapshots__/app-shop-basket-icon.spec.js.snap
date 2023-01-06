@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@/components/common/shop/app-shop-basket.vue Если входящий параметр isHighlighted:false 1`] = `
+<div class="shop-ticket__basket"><i data-name="shopping-bag" data-tags="ecommerce,cart,purchase,store" data-type="shopping-bag" class="shop-ticket__icon feather feather--shopping-bag"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--s-black-color-80)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag feather__content">
+      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <path d="M16 10a4 4 0 0 1-8 0"></path>
+    </svg></i>
+  <!---->
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если входящий параметр isHighlighted:true 1`] = `
+<div class="shop-ticket__basket shop-ticket__basket--active"><i data-name="shopping-bag" data-tags="ecommerce,cart,purchase,store" data-type="shopping-bag" class="shop-ticket__icon feather feather--shopping-bag"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--s-black-color-80)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag feather__content">
+      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <path d="M16 10a4 4 0 0 1-8 0"></path>
+    </svg></i>
+  <div class="shop-ticket__basket-text d-none d-md-flex">
+    shop.product.inBasket
+  </div>
+</div>
+`;

@@ -1,0 +1,29 @@
+@import 'global/reset';
+@import 'themed-components';
+@import 'vars';
+
+@font-face {
+  font-family: 'MontserratRegular';
+  font-weight: normal;
+  src: local('Montserrat Regular'), url('~@/assets/fonts/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  font-weight: 500;
+  src: local('Montserrat Medium'), url('~@/assets/fonts/Montserrat-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  font-weight: 600;
+  src: local('Montserrat SemiBold'),
+  url('~@/assets/fonts/Montserrat-SemiBold.woff2') format('woff2');
+}
+
+body {
+  background-color: var(--s-black-color-0) !important;
+  font-family: var(--s-regular-font) !important;
+  font-weight: 400;
+  color: var(--s-black-color);
+}

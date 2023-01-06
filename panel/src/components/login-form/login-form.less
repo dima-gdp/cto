@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // TODO: переменную под шрифт
+  font-family: 'Inter';
+
+  &__input {
+    width: 300px;
+    height: 38px;
+
+    @media (min-width: 600px) {
+      width: 420px;
+      height: 38px;
+    }
+  }
+
+  .ivu-input-large {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .ivu-input {
+    padding: 6px 16px;
+  }
+
+  &__button {
+    width: 163px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 16px;
+    // TODO: добавить переменную и название для цвета
+    background: #0D6EFD;
+    border-radius: 4px;
+  }
+}

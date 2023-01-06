@@ -1,0 +1,33 @@
+.static-page {
+  position: relative;
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.static-page-wrap {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.static-page-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  figcaption {
+    font-family: 'MontserratRegular', sans-serif !important;
+  }
+
+  padding: 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

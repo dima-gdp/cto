@@ -1,0 +1,54 @@
+.legal-info-form {
+  margin-bottom: 15px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    padding: 5px;
+  }
+}
+
+.legal-info-form-header {
+  &__item {
+    margin-left: 20px;
+
+    .ivu-tabs-bar {
+      border-bottom: 0px;
+      margin-bottom: 1px;
+    }
+
+    &:last-child {
+      color: rgb(24, 144, 255);
+      margin-left: 0px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.legal-info-form-actions {
+  margin-left: 5px;
+}
+
+.legal-info-form-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.43);
+  transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  > i {
+    font-size: 34px;
+  }
+}

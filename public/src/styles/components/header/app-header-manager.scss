@@ -1,0 +1,42 @@
+.info-manager {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    color: var(--s-black-color-60);
+  }
+
+  &__name {
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: var(--s-black-color-80);
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: var(--s-primary-color);
+    text-decoration: none;
+
+    &--nw {
+      white-space: nowrap;
+    }
+
+    span {
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.1px;
+      color: var(--s-black-color-60);
+    }
+  }
+}

@@ -1,0 +1,91 @@
+//// Main colors
+//$s-primary-color-10 : #E5F2FF;
+//$s-primary-color-20 : #CCE5FF;
+//$s-primary-color-30 : #B3D8FF;
+//$s-primary-color-40 : #99CBFF;
+//$s-primary-color-50 : #80BFFF;
+//$s-primary-color-60 : #66B2FF;
+//$s-primary-color-70 : #4DA5FF;
+//$s-primary-color-80 : #3398FF;
+//$s-primary-color-90 : #1A8BFF;
+//$s-primary-color    : #007EFF;
+//
+//$s-black-color-5  : #F9F9FA;
+//$s-black-color-10 : #E8E8E8;
+//$s-black-color-20 : #DBDDE0;
+//$s-black-color-40 : #CACCCF;
+//$s-black-color-60 : #A0A4A8;
+//$s-black-color-80 : #52575C;
+//$s-black-color    : #25282B;
+//
+//// Other colors
+//$s-white-color : #FFF;
+//
+//$s-warning-color        : #F6A609;
+//$s-warning-color-darker : #E89806;
+//$s-warning-color-medium : #FFBC1F;
+//
+//$s-success-color        : #2AC769;
+//$s-success-color-darker : #1AB759;
+//$s-success-color-medium : #40DD7F;
+//$s-success-color-light  : #B8FED3;
+//
+//$s-error-color        : #FB4E4E;
+//$s-error-color-darker : #E93C3C;
+//$s-error-color-medium : #FF6262;
+//$s-error-color-light  : #FADBDC;
+
+// Typography fonts
+//$s-regular-font: "MontserratRegular", sans-serif;
+//$s-medium-font: "MontserratMedium", sans-serif;
+//$s-semi-bold-font: "MontserratSemiBold", sans-serif;
+
+// Typography root size (more - _typo.scss)
+:root {
+  --s-primary-color-10: #e5f2ff;
+  --s-primary-color-20: #cce5ff;
+  --s-primary-color-30: #b3d8ff;
+  --s-primary-color-40: #99cbff;
+  --s-primary-color-50: #80bfff;
+  --s-primary-color-60: #66b2ff;
+  --s-primary-color-70: #4da5ff;
+  --s-primary-color-80: #3398ff;
+  --s-primary-color-90: #1a8bff;
+  --s-primary-color: #007eff;
+  --s-primary-box-shadow: rgba(45, 140, 240, 0.2);
+
+  --s-black-color-0: #ffffff;
+  --s-black-color-5: #f9f9fa;
+  --s-black-color-10: #e8e8e8;
+  --s-black-color-20: #dbdde0;
+  --s-black-color-40: #cacccf;
+  --s-black-color-60: #a0a4a8;
+  --s-black-color-80: #52575c;
+  --s-black-color: #25282b;
+  --s-black-box-shadow: rgba(0, 0, 0, 0.15);
+
+  // Other colors
+  --s-white-color: #fff;
+
+  --s-warning-color: #f6a609;
+  --s-warning-color-darker: #e89806;
+  --s-warning-color-medium: #ffbc1f;
+  --s-warning-color-light: #fff2d2;
+  --s-warning-box-shadow: rgb(246, 166, 9, 0.2);
+
+  --s-success-color: #2ac769;
+  --s-success-color-darker: #1ab759;
+  --s-success-color-medium: #40dd7f;
+  --s-success-color-light: #b8fed3;
+  --s-success-box-shadow: rgba(45, 140, 240, 0.2);
+
+  --s-error-color: #fb4e4e;
+  --s-error-color-darker: #e93c3c;
+  --s-error-color-medium: #ff6262;
+  --s-error-color-light: #fadbdc;
+  --s-error-box-shadow: rgba(45, 140, 240, 0.2);
+
+  --s-regular-font: 'MontserratRegular', sans-serif;
+  --s-medium-font: 'MontserratMedium', sans-serif;
+  --s-semi-bold-font: 'MontserratSemiBold', sans-serif;
+}

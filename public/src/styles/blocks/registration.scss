@@ -1,0 +1,66 @@
+.registration {
+  &__title {
+  }
+
+  &__registration-form {
+    margin-top: 32px;
+  }
+
+  &__registration-footer {
+    margin-top: 32px;
+  }
+}
+
+.registration-footer {
+  @include media-breakpoint-up(lg) {
+    flex-direction: row-reverse;
+  }
+
+  &__submit {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      max-width: 300px;
+    }
+  }
+
+  &__submit-wrapper {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: right;
+    }
+  }
+}
+
+.registration-form-group {
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--s-black-color-10);
+
+  &--divider {
+    border-bottom: 1px solid var(--s-black-color-10) !important;
+    margin-bottom: 24px !important;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+    // padding-bottom: 24px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__user-ticket {
+    margin-bottom: 34px;
+  }
+
+  & > .row > .ivu-form-item {
+    margin-bottom: 24px;
+  }
+
+  & .ivu-form-item-label {
+    min-height: 14px;
+  }
+}

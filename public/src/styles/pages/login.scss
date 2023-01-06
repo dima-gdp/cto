@@ -1,0 +1,114 @@
+.auth {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  &__title {
+    margin: 24px 0;
+    font-size: 26px;
+    color: var(--s-black-color-80);
+
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+      line-height: 1.31;
+      margin: 32px 0;
+    }
+  }
+
+  &__alert {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+  }
+
+  &__event-info-main {
+    padding-top: 32px;
+    padding-bottom: 28px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  &__event-info-contacts {
+    padding: 0 16px 32px;
+  }
+
+  &__authform {
+    padding: 32px 16px 32px;
+    border-bottom: 1px solid var(--s-black-color-10);
+
+    @include media-breakpoint-up(md) {
+      border-bottom: 0;
+    }
+  }
+
+  .divider {
+    border-right: 0;
+
+    @include media-breakpoint-up(md) {
+      border-right: 1px solid var(--s-black-color-10);
+    }
+  }
+}
+
+.authform {
+  &__form {
+    margin-bottom: 24px;
+  }
+
+  &__password-recovery {
+    margin-top: 16px;
+    font-size: 14px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
+  }
+
+  &__form-item {
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 320px;
+    }
+  }
+
+  &__submit {
+    padding-top: 8px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 320px;
+    }
+  }
+}
+
+.slide-fade-enter-active {
+  transition: all 0.6s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.6s ease;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(-12px);
+  opacity: 0;
+}
+
+.auth-header {
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+
+    &--no-back-button {
+      justify-content: flex-end;
+    }
+  }
+
+  .ivu-poptip-popper {
+    will-change: unset !important;
+    top: 40px;
+    left: -190px;
+    padding: 10px 0 7px 0;
+    opacity: 1;
+  }
+}

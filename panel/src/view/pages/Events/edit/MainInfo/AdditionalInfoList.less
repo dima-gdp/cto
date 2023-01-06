@@ -1,0 +1,27 @@
+.additional-info {
+  width: 100%;
+}
+
+.additional-info-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  margin-bottom: 10px;
+}
+
+.additional-info-list-item {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+
+  > .ivu-card {
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    text-align: right;
+  }
+}

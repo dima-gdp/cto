@@ -1,0 +1,22 @@
+.registration {
+  &__title {
+  }
+
+  &__registration-form {
+    margin-top: 32px;
+    position: relative;
+    min-height: 400px;
+  }
+
+  &__registration-footer {
+    margin-top: 32px;
+  }
+
+  &__alert {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,85 @@
+.store-form-header {
+  &__item {
+    margin-left: 20px;
+
+    .ivu-tabs-bar {
+      border-bottom: 0px;
+      margin-bottom: 1px;
+    }
+  }
+}
+
+.store-form {
+  margin-bottom: 15px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    padding: 5px;
+
+    .ivu-date-picker {
+      width: 100%;
+    }
+  }
+}
+
+.store-form-actions {
+  margin-left: 5px;
+}
+
+.store-form-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.43);
+  transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  > i {
+    font-size: 34px;
+  }
+}
+
+.rate-blocked-card {
+  padding: 8px 38px 13px;
+  background: #fff1f0;
+  border: 1px solid #ffccc7;
+
+  &:hover {
+    box-shadow: 0 1px 6px rgba(255, 204, 199, 0.88);
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  &__body {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  & .ivu-card-extra {
+    top: 6px;
+    left: 16px;
+    right: auto;
+    cursor: pointer;
+  }
+
+  & .ivu-card-body {
+  }
+}

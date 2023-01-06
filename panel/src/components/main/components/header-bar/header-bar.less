@@ -1,0 +1,56 @@
+.header-bar {
+  position: relative;
+  background-color: #f5f7f9;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  .custom-content-con {
+    float: right;
+    height: auto;
+    padding-right: 20px;
+    line-height: 64px;
+    & > * {
+      float: right;
+    }
+  }
+
+  &__logout {
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  &__notify {
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+.header-bar-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-change-event {
+  margin-left: 25px;
+}
+
+.header-bar-info {
+  &__desc {
+    color: #808695;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  &__title {
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.ivu-layout-header {
+  height: auto !important;
+  line-height: normal !important;
+}

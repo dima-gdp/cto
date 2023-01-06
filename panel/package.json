@@ -1,0 +1,110 @@
+{
+  "name": "iview-admin",
+  "version": "2.0.0",
+  "private": false,
+  "author": "Lison<lison16new@163.com>",
+  "scripts": {
+    "build:prod": "vue-cli-service build --mode production",
+    "build:dev": "vue-cli-service build --mode development ",
+    "watch": "vue-cli-service build --mode development --watch",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix",
+    "dev": "vue-cli-service serve --port 3001",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "prettier": "prettier --write .",
+    "msw:init": "msw init ./public --save"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@s256/article-editor": "^1.0.5",
+    "axios": "^0.18.0",
+    "axios-jsonp": "^1.0.2",
+    "chart.js": "^2.8.0",
+    "clipboard": "^2.0.0",
+    "codemirror": "^5.38.0",
+    "core-js": "^2.6.5",
+    "countup": "^1.8.2",
+    "cropperjs": "^1.5.7",
+    "dayjs": "^1.8.28",
+    "echarts": "^4.8.0",
+    "html2canvas": "^1.0.0-alpha.12",
+    "iview": "3.5.4",
+    "iview-area": "1.6.0",
+    "js-cookie": "^2.2.1",
+    "jsonapi-serializer": "^3.6.4",
+    "lodash.clonedeep": "^4.5.0",
+    "luxon": "^1.22.0",
+    "monaco-editor": "^0.30.1",
+    "monaco-editor-webpack-plugin": "^6.0.0",
+    "nanoid": "^3.1.16",
+    "qs": "^6.9.4",
+    "rambda": "^6.7.0",
+    "simplemde": "^1.11.2",
+    "sortablejs": "^1.7.0",
+    "tree-table-vue": "^1.1.0",
+    "v-click-outside-x": "^4.1.0",
+    "v-org-tree": "^1.0.6",
+    "vue": "^2.5.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-content-placeholders": "^0.2.1",
+    "vue-i18n": "^7.8.0",
+    "vue-imask": "^5.1.9",
+    "vue-multiselect": "^2.1.6",
+    "vue-router": "^3.3.4",
+    "vue-smooth-dnd": "^0.8.0",
+    "vue-sticky-directive": "^0.0.10",
+    "vue-the-mask": "^0.11.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1",
+    "xlsx": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.12",
+    "@s256/eslint-config-vue": "0.0.2",
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-unit-mocha": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^3.0.0-beta.10",
+    "@vue/test-utils": "^1.0.0-beta.10",
+    "chai": "^4.1.2",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "lint-staged": "^6.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "msw": "^0.35.0",
+    "prettier": "^2.2.1",
+    "vue-cli-plugin-styleguidist": "^3.19.5",
+    "vue-styleguidist": "^3.19.5",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.39.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}

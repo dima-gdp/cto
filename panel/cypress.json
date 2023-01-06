@@ -1,0 +1,9 @@
+{
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "baseUrl": "http://192.168.1.120:3001",
+  "env": {
+    "userName": "admin@s256.ru",
+    "apiUrl": "http://192.168.1.120:8080",
+    "userPassword": "123456"
+  }
+}

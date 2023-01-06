@@ -1,0 +1,106 @@
+@form-prefix-cls: ~"@{css-prefix}form";
+@form-item-prefix-cls: ~"@{form-prefix-cls}-item";
+
+.@{form-prefix-cls} {
+    .@{form-item-prefix-cls}-label {
+        // text-align: right;
+        // vertical-align: middle;
+        // float: left;
+        font-size: @font-size-base;
+        color: @text-color;
+        line-height: 1;
+        // padding: 10px 12px 10px 0;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &-label-left .@{form-item-prefix-cls}-label {
+        text-align: left;
+    }
+    &-label-top .@{form-item-prefix-cls}-label {
+        float: none;
+        display: inline-block;
+        padding: 0 0 10px 0;
+    }
+    &-inline{
+        .@{form-item-prefix-cls} {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+    }
+}
+
+.@{form-item-prefix-cls} {
+    margin-bottom: 24px;
+    vertical-align: top;
+    .clearfix();
+    &-content {
+        position: relative;
+        line-height: 32px;
+        font-size: @font-size-base;
+    }
+    & & {
+        margin-bottom: 0;
+    }
+    & & &-content {
+        margin-left: 0!important;
+    }
+
+    &-error-tip{
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 0;
+        font-family: MontserratRegular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: var(--s-error-color);
+    }
+
+    &-tip {
+      position: absolute;
+      top: calc(100% + 2px);
+      left: 0;
+      font-family: MontserratRegular, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: var(--s-black-color-60);
+    }
+
+    &-required {
+        .@{form-item-prefix-cls}-label:after {
+            content: '*';
+            display: inline-block;
+            margin-left: 4px;
+            line-height: 1;
+            font-family: SimSun;
+            font-size: @font-size-base;
+            color: @error-color;
+            position: absolute;
+        }
+    }
+    &-error {
+        // todo
+    }
+}
+
+.@{form-prefix-cls}-hide-required-mark .@{form-item-prefix-cls}-required{
+    .@{form-item-prefix-cls}-label:after {
+        display: none;
+    }
+}
+
+.ivu-form-item-label + .ivu-form-item-content {
+    margin-top: 0;
+}
+
+.ivu-form-item-content {
+    margin-top: 25px;
+}

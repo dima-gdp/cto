@@ -1,0 +1,162 @@
+{
+  "_from": "vue-feather",
+  "_id": "vue-feather@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-xwZbTroX08T4G9SOj7cRQ+h2IawBHYQpQGtNRfxPyeBpb+mb5xRyBNPZNBy4mc31LT6VvhZ7fa57le+W5WjPeg==",
+  "_location": "/vue-feather",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vue-feather",
+    "name": "vue-feather",
+    "escapedName": "vue-feather",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vue-feather/-/vue-feather-1.0.0.tgz",
+  "_shasum": "e337d6b0e76e20f367b170850dc59a836725d44f",
+  "_spec": "vue-feather",
+  "_where": "/Users/Ocean/projects/cto-public",
+  "author": {
+    "name": "Chen Fengyuan",
+    "url": "https://chenfengyuan.com"
+  },
+  "browser": "dist/vue-feather.js",
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not ie <= 8"
+  ],
+  "bugs": {
+    "url": "https://github.com/fengyuanchen/vue-feather/issues"
+  },
+  "bundleDependencies": false,
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "deprecated": false,
+  "description": "Feather component for Vue.js.",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@commitlint/cli": "^7.3.2",
+    "@commitlint/config-conventional": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "change-case": "^3.1.0",
+    "create-banner": "^1.0.0",
+    "css-loader": "^2.1.0",
+    "del-cli": "^1.1.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-vue": "^5.1.0",
+    "feather-icons": "^4.12.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
+    "karma": "^4.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^3.0.5",
+    "lint-staged": "^8.1.0",
+    "markdown-to-vue-loader": "^1.0.1",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "puppeteer": "^1.11.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-vue": "^4.6.2",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.5.1",
+    "vue": "^2.5.22",
+    "vue-loader": "^15.6.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "homepage": "https://fengyuanchen.github.io/vue-feather",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "icons",
+    "feather",
+    "feather-icons",
+    "vue-component",
+    "component",
+    "vue",
+    "vue.js",
+    "front-end",
+    "web"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.{css,vue,html,vue,md}": [
+        "stylelint --fix",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "{dist,docs}/**"
+    ]
+  },
+  "main": "dist/vue-feather.common.js",
+  "module": "dist/vue-feather.esm.js",
+  "name": "vue-feather",
+  "peerDependencies": {
+    "feather-icons": "^4.12.0",
+    "vue": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengyuanchen/vue-feather.git"
+  },
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "build:docs": "webpack --mode production",
+    "clear": "del-cli dist",
+    "clear:docs": "del-cli docs",
+    "compress": "uglifyjs dist/vue-feather.min.js -o dist/vue-feather.min.js -c -m --comments /^!/",
+    "deploy": "npm run clear:docs && npm run build:docs",
+    "dev": "webpack-dev-server --mode development --host 0.0.0.0 --useLocalIp --hot --open --overlay",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:css": "stylelint src/**/*.{css,vue,html,vue,md} --fix",
+    "lint:js": "eslint src test --ext .js,.vue --fix",
+    "prebuild": "npm run clear",
+    "release": "npm run lint && npm run build && npm run compress && npm run deploy && npm test",
+    "start": "npm run dev",
+    "test": "karma start"
+  },
+  "version": "1.0.0"
+}

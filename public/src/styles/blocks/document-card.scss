@@ -1,0 +1,47 @@
+.document-card {
+  min-height: 425px;
+  position: relative;
+  &__download {
+    display: flex;
+    margin-bottom: 18px;
+    align-items: center;
+  }
+  &__image-block {
+    margin-bottom: 24px;
+  }
+  &__status {
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 16px;
+    &--failed {
+      color: var(--s-error-color-medium);
+    }
+    &--ready {
+      color: var(--s-success-color-medium);
+    }
+    &--not-ready {
+      color: var(--s-warning-color-medium);
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--s-black-color-80);
+    margin-bottom: 14px;
+  }
+  &__size-file {
+    color: var(--s-black-color-80);
+    margin-left: 20px;
+  }
+  &__loader {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    .ivu-spin-dot {
+      background: var(--s-warning-color-medium);
+    }
+  }
+}

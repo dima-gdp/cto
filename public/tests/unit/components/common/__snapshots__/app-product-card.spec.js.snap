@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является other shop-ticket__bottom-info Если товар является other, и юзер может купить больше нуля товара, и если известно максимальное количество товара 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div class="shop-ticket__basket-info">
+    shop.product.inBasket: 1
+  </div>
+  <div class="shop-ticket__access-info">
+    shop.product.available: 4
+  </div>
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является other shop-ticket__bottom-info Если товар является other, и юзер может купить товара больше 0, и количество товара бесконечно 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div class="shop-ticket__basket-info">
+    shop.product.inBasket: 1
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является other shop-ticket__bottom-info Если товар является other, и юзер не может купить товар 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div>shop.product.other.outOfStock</div>
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является ticket shop-ticket__bottom-info Если товар является ticket, и не один тикет не в корзине, и количество товара не бесконечное 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div class="shop-ticket__basket-info">
+    shop.product.inBasket: 0
+  </div>
+  <div class="shop-ticket__access-info">
+    shop.product.available: 5
+  </div>
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является ticket shop-ticket__bottom-info Если товар является ticket, и текущий товар в корзине, и количество товара бесконечное 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div class="shop-ticket__basket-info">
+    shop.product.inBasket: 0
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является ticket shop-ticket__bottom-info Если товар является ticket, и текущий товар в корзине, и количество товара не бесконечное 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div class="shop-ticket__basket-info">
+    shop.product.inBasket: 0
+  </div>
+  <div class="shop-ticket__access-info">
+    shop.product.available: 5
+  </div>
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если товар является ticket shop-ticket__bottom-info Если товар является ticket, и текущий товар не в корзине, и какой-то тикет в корзине 1`] = `
+<div class="shop-ticket__bottom-info">
+  <div>shop.product.ticket.alreadySelected</div>
+</div>
+`;

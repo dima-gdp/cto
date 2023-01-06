@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@/components/base/header/app-header-manager.vue Когда есть все данные для отрисовки(телефон, телефон добавочный, почта, инфо) 1`] = `
+<div class="info-manager">
+  <p class="info-manager__title">Елизавета Гаврилова - Менеджер POINTREG</p> <a href="tel:+7 (920) 258-13-50" class="info-manager__link info-manager__link--nw">
+    +7 (920) 258-13-50
+    <span>256</span></a> <a href="mailto:manager@pointreg.com" class="info-manager__link">manager@pointreg.com</a>
+</div>
+`;

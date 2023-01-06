@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@/components/common/shop/app-shop-basket.vue Если текущая валюта не равна рублю 1`] = `
+<div class="shop-ticket__price">
+  <div class="shop-ticket__price-rub">
+    1000 ₽
+  </div>
+  <div class="shop-ticket__price-cur"><span style="margin-right: 5px;">
+      1000 €
+    </span>
+    <poptip-stub placement="top" boundariespadding="5" offset="0" options="[object Object]" trigger="click" content="  1€ = 84.79 ₽" width="270" capture="true">
+      <div class="shop-ticket__price-help"><i data-name="help-circle" data-tags="question mark" data-type="help-circle" class="feather feather--help-circle" style="position: relative; top: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--s-black-color-80)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle feather__content">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg></i></div>
+    </poptip-stub>
+  </div>
+</div>
+`;
+
+exports[`@/components/common/shop/app-shop-basket.vue Если текущая валюта равна рублю 1`] = `
+<div class="shop-ticket__price">
+  <div class="shop-ticket__price-rub">
+    1000 ₽
+  </div>
+  <!---->
+</div>
+`;

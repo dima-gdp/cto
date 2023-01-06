@@ -1,0 +1,117 @@
+@alert-prefix-cls: ~"@{css-prefix}alert";
+@icon-prefix-cls: ~"@{css-prefix}icon";
+
+.@{alert-prefix-cls}{
+    position: relative;
+    padding: 9px 24px 9px 24px;
+    border-radius: @alert-border-radius-base;
+    line-height: 16px;
+    margin-bottom: 16px;
+
+    &&-with-icon{
+        padding: 8px 48px 8px 38px;
+    }
+    &-icon {
+        font-size: @font-size-large;
+        top: 6px;
+        left: 12px;
+        position: absolute;
+    }
+
+    &-desc {
+        font-size: @font-size-base;
+        color: @text-color;
+        line-height: 21px;
+        display: none;
+        text-align: justify;
+    }
+
+    &-success {
+        border: @border-width-base @border-style-base @alert-success-bg;
+        //background-color: tint(@success-color, 90%);
+        background-color: @alert-success-bg;
+        .@{alert-prefix-cls}-icon {
+          color: @alert-success-color
+        }
+        .@{alert-prefix-cls}-message, .@{alert-prefix-cls}-desc {
+          color: @alert-success-color
+        }
+    }
+
+    &-info {
+        border: @border-width-base @border-style-base @alert-info-bg;
+        //background-color: tint(@primary-color, 90%);
+        background-color: @alert-info-bg;
+        .@{alert-prefix-cls}-icon {
+          color: @alert-info-color;
+        }
+        .@{alert-prefix-cls}-message, .@{alert-prefix-cls}-desc {
+          color: @alert-info-color;
+        }
+    }
+
+    &-warning {
+        border: @border-width-base @border-style-base @alert-warning-bg;;
+        //background-color: tint(@warning-color, 90%);
+        background-color: @alert-warning-bg;
+        .@{alert-prefix-cls}-icon {
+          color: @alert-warning-color;
+        }
+        .@{alert-prefix-cls}-message, .@{alert-prefix-cls}-desc {
+          color: @alert-warning-color;
+        }
+    }
+
+    &-error {
+        border: @border-width-base @border-style-base @alert-error-bg;
+        //background-color: tint(@error-color, 90%);
+        background-color: @alert-error-bg;
+        .@{alert-prefix-cls}-icon {
+          color: @alert-error-color ;
+        }
+        .@{alert-prefix-cls}-message, .@{alert-prefix-cls}-desc {
+          color: @alert-error-color ;
+        }
+    }
+    .@{alert-prefix-cls}-message {
+      font-size: @alert-font-size-message
+    }
+    .@{alert-prefix-cls}-desc {
+      font-size: @alert-font-size-desc
+    }
+    &-close {
+        .content-close(-3px);
+    }
+
+    &-with-desc {
+        padding: @alert-padding-base;
+        position: relative;
+        border-radius: @alert-border-radius-base;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    &-with-desc&-with-icon{
+        padding: @alert-padding-base;
+    }
+
+    &-with-desc &-desc{
+        display: block;
+    }
+
+    &-with-desc &-message {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    &-with-desc &-icon {
+        top: 50%;
+        left: 24px;
+        margin-top: -24px;
+        font-size: 28px;
+    }
+
+    &-with-banner{
+        border-radius: @alert-border-radius-banner;
+    }
+}

@@ -1,0 +1,139 @@
+$root-font-size: 16px;
+
+@mixin s-font-h1 {
+  font-size: 2.625em;
+  line-height: 42px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-h2 {
+  font-size: 1.625em;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-h3 {
+  font-size: 1.25em;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-h4 {
+  font-size: 1.125em;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-subtitle {
+  font-size: 1em;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-subtitle-secondary {
+  font-size: 0.875em;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-body {
+  font-size: 1em;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-regular-font);
+  font-weight: 400;
+}
+
+@mixin s-font-body-secondary {
+  font-size: 0.875em;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-regular-font);
+  font-weight: 400;
+}
+
+@mixin s-font-small-1 {
+  font-size: 0.75em;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-small-2 {
+  font-size: 0.75em;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-regular-font);
+  font-weight: 400;
+}
+
+@mixin s-font-small-3 {
+  font-size: 0.6875em;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-regular-font);
+  font-weight: 400;
+}
+
+@mixin s-font-button {
+  font-size: 0.875em;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+}
+
+@mixin s-font-link {
+  font-size: 1em;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+  text-decoration-line: underline;
+  color: var(--s-primary-color-80);
+}
+
+@mixin s-font-link-secondary {
+  font-size: 0.875em;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+  text-decoration-line: underline;
+  color: var(--s-primary-color);
+}
+
+@mixin s-font-link-dotted {
+  position: relative;
+  font-size: 0.875em;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  font-family: var(--s-medium-font);
+  font-weight: 500;
+  color: var(--s-black-color-60);
+  text-decoration: none;
+  padding-bottom: 2px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed var(--s-black-color-60);
+    bottom: 0;
+    left: 0;
+  }
+}

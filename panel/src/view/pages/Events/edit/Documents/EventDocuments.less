@@ -1,0 +1,28 @@
+.event-documents {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 15px;
+    align-items: stretch;
+  }
+  &__creat-document {
+    display: flex;
+    border: 1px dashed #a0a4a8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-height: 300px;
+    &:hover {
+      border: 1px solid #a0a4a8;
+    }
+  }
+  &__filter-lang {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__filter-toggle {
+    margin-left: 15px;
+  }
+}

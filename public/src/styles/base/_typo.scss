@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'MontserratRegular';
+  font-weight: normal;
+  src: local('Montserrat Regular'), url('~@/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('~@/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  font-weight: 500;
+  src: local('Montserrat Medium'), url('~@/assets/fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('~@/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  font-weight: 600;
+  src: local('Montserrat SemiBold'),
+    url('~@/assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('~@/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+h1,
+.s-h1 {
+  @include s-font-h1;
+}
+
+h2,
+.s-h2 {
+  @include s-font-h2;
+}
+
+h3,
+.s-h3 {
+  @include s-font-h3;
+}
+
+h4,
+.s-h4 {
+  @include s-font-h4;
+}
+
+.s-subtitle {
+  @include s-font-subtitle;
+}
+
+.s-subtitle-secondary {
+  @include s-font-subtitle-secondary;
+}
+
+.s-body {
+  @include s-font-body;
+}
+
+.s-body-secondary {
+  @include s-font-body-secondary;
+}
+
+.s-small-1 {
+  @include s-font-small-1;
+}
+
+.s-small-2 {
+  @include s-font-small-2;
+}
+
+.s-small-3 {
+  @include s-font-small-3;
+}
+
+button,
+.s-btn {
+  @include s-font-button;
+}
+
+a,
+a .s-link,
+.s-link {
+  @include s-font-link;
+  cursor: pointer;
+}
+
+a .s-link-secondary,
+.s-link-secondary {
+  @include s-font-link-secondary;
+  cursor: pointer;
+}
+
+a .s-link-dotted,
+.s-link-dotted {
+  @include s-font-link-dotted;
+  cursor: pointer;
+}
+
+.ivu-btn {
+  font-family: var(--s-semi-bold-font);
+  font-weight: 600;
+}
+
+.s-pointer {
+  cursor: pointer;
+}
+
+.success-color {
+  color: var(--s-success-color);
+}
+.warning-color {
+  color: var(--s-warning-color);
+}
+.error-color {
+  color: var(--s-error-color);
+}

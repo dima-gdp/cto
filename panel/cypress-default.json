@@ -1,0 +1,9 @@
+{
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "baseUrl": "http://{API_HOST}:{PANEL_PORT}",
+  "env": {
+    "userName": "{PANEL_TEST_USER_NAME}",
+    "apiUrl": "http://{API_HOST}:{API_PORT}",
+    "userPassword": "{PANEL_TEST_USER_PASSWORD}"
+  }
+}

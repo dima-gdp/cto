@@ -1,0 +1,69 @@
+.success-color {
+  color: @success-color;
+}
+.icon-left {
+  margin-right: 10px;
+}
+.icon-right {
+  margin-left: 10px;
+}
+
+.text {
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.c {
+  &-pointer {
+    cursor: pointer;
+  }
+  &-move {
+    cursor: move;
+  }
+}
+
+.ivu-form-item-error {
+  .multiselect__tags {
+    border-color: #ed4014;
+  }
+
+  .multiselect__select > i {
+    color: #ed4014 !important;
+  }
+}
+
+.add-button-big {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  > i {
+    font-size: 32px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.app-pb {
+  padding-bottom: 60px;
+}
